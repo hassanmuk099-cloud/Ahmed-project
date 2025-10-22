@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="تسجيل الدخول أو إنشاء حساب جديد في موقعنا.">
+    <title>تسجيل الدخول | مشروع متكامل</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="logo">مشروعي</a>
+            <nav class="main-nav">
+                <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                    <span class="sr-only">القائمة</span>
+                </button>
+                <ul id="primary-navigation" class="nav-links">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">نبذة عنا</a></li>
+                    <li><a href="portfolio.html">أعمالنا</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                    <li><a href="login.html" class="cta-button active">تسجيل الدخول</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>تسجيل الدخول / حساب جديد</h1>
+            </div>
+        </section>
+        <section>
+            <div class="container content-section">
+                <form id="login-form" class="contact-form" novalidate>
+                    <h2>تسجيل الدخول</h2>
+                    <div id="login-status-message"></div>
+                    <div class="form-group">
+                        <label for="login-email">البريد الإلكتروني</label>
+                        <input type="email" id="login-email" name="email" required>
+                        <small class="error-message"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">كلمة المرور</label>
+                        <input type="password" id="login-password" name="password" required>
+                        <small class="error-message"></small>
+                    </div>
+                    <button type="submit" class="button-primary">دخول</button>
+                </form>
+
+                 <form id="signup-form" class="contact-form" novalidate style="margin-top: 4rem;">
+                    <h2>إنشاء حساب جديد</h2>
+                    <div id="signup-status-message"></div>
+                    <div class="form-group">
+                        <label for="signup-name">الاسم الكامل</label>
+                        <input type="text" id="signup-name" name="name" required minlength="3">
+                        <small class="error-message"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-email">البريد الإلكتروني</label>
+                        <input type="email" id="signup-email" name="email" required>
+                        <small class="error-message"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-password">كلمة المرور</label>
+                        <input type="password" id="signup-password" name="password" required minlength="8">
+                        <small class="error-message"></small>
+                    </div>
+                    <button type="submit" class="button-primary">إنشاء حساب</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 مشروعي. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+</body>
+</html>
